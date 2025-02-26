@@ -1,4 +1,4 @@
-'''Calculator Test Suite'''
+'''Calculator Test'''
 from decimal import Decimal
 import pytest
 from app.calculator.calculation import Calculation
@@ -9,12 +9,12 @@ from app.operation.operations import add, subtract
 def setup_calculations():
     '''Clearing the history and adding sample calculations for tests'''
     Calculations.clear_history()
-    Calculations.add_calculation(Calculation(Decimal('21'), Decimal('14'), add))
-    Calculations.add_calculation(Calculation(Decimal('17'), Decimal('23'), subtract))
+    Calculations.add_calculation(Calculation(Decimal('29'), Decimal('13'), add))
+    Calculations.add_calculation(Calculation(Decimal('29'), Decimal('25'), subtract))
 
 def test_add_calculation(setup_calculations):
     '''Test adding a calculation to the history'''
-    calc=Calculation(Decimal('11'), Decimal('5'), add)
+    calc=Calculation(Decimal('3'), Decimal('2'), add)
     Calculations.add_calculation(calc)
     assert Calculations.get_latest() == calc, "Adding the calculation to history failed."
 
@@ -31,7 +31,7 @@ def test_clear_history(setup_calculations):
 def test_get_latest(setup_calculations):
     '''Test getting the latest calculation from the history'''
     latest = Calculations.get_latest()
-    assert latest.x == Decimal('17') and latest.y == Decimal('23'), "Haven't got the correct latest calculation"
+    assert latest.x == Decimal('29') and latest.y == Decimal('25'), "Haven't got the correct latest calculation"
 
 def test_find_by_operation(setup_calculations):
     '''Test finding calculations in the history by operation type'''

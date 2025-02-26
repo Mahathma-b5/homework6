@@ -1,4 +1,4 @@
-'''Calculator Test Module'''
+'''Calculator Test'''
 from faker import Faker
 from app.calculator import Calculator
 
@@ -28,8 +28,7 @@ def test_multiplication():
 def test_division():
     '''Test that Division function works'''
     x=fake.random_int(min=0,max=50)
-    y=fake.random_int(min=0,max=50)
-    y=y if y!=0 else 1
+    y=fake.random_int(min=1,max=50)
     expected=x/y
     assert Calculator.divide(x,y)==expected
 
