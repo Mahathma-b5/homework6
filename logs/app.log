@@ -1,0 +1,912 @@
+2025-03-03 03:45:09,120 - app - INFO - Initializing the application...
+2025-03-03 03:45:09,120 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 03:45:09,120 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 03:45:09,120 - app - INFO - Registered command: add
+2025-03-03 03:45:09,120 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 03:45:09,120 - app - INFO - Registered command: divide
+2025-03-03 03:45:09,120 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 03:45:09,121 - app - INFO - Registered command: menu
+2025-03-03 03:45:09,121 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 03:45:09,121 - app - INFO - Registered command: multiply
+2025-03-03 03:45:09,121 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 03:45:09,121 - app - INFO - Registered command: subtract
+2025-03-03 03:45:09,121 - app - INFO - Starting the REPL loop...
+2025-03-03 03:45:09,121 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 03:45:09,121 - app - INFO - Exiting Calculator...
+2025-03-03 03:45:09,122 - app - INFO - Initializing the application...
+2025-03-03 03:45:09,122 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 03:45:09,122 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 03:45:09,122 - app - INFO - Registered command: add
+2025-03-03 03:45:09,122 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 03:45:09,122 - app - INFO - Registered command: divide
+2025-03-03 03:45:09,122 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 03:45:09,122 - app - INFO - Registered command: menu
+2025-03-03 03:45:09,122 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 03:45:09,122 - app - INFO - Registered command: multiply
+2025-03-03 03:45:09,122 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 03:45:09,122 - app - INFO - Registered command: subtract
+2025-03-03 03:45:09,122 - app - INFO - Starting the REPL loop...
+2025-03-03 03:45:09,122 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 03:45:09,122 - app - INFO - Executing command: unknown_command with arguments: []
+2025-03-03 03:45:09,122 - app - INFO - Exiting Calculator...
+2025-03-03 03:45:09,123 - app - ERROR - Failed to load plugin broken_plugin: Mock import error
+2025-03-03 03:45:09,124 - app - INFO - Initializing the application...
+2025-03-03 03:45:09,124 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 03:45:09,124 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 03:45:09,124 - app - INFO - Registered command: add
+2025-03-03 03:45:09,124 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 03:45:09,124 - app - INFO - Registered command: divide
+2025-03-03 03:45:09,124 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 03:45:09,124 - app - INFO - Registered command: menu
+2025-03-03 03:45:09,124 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 03:45:09,124 - app - INFO - Registered command: multiply
+2025-03-03 03:45:09,124 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 03:45:09,124 - app - INFO - Registered command: subtract
+2025-03-03 03:45:09,124 - app - INFO - Starting the REPL loop...
+2025-03-03 03:45:09,125 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 03:45:09,125 - app - INFO - Executing command: add with arguments: ['5', '3']
+2025-03-03 03:45:09,125 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 03:45:09,125 - app - INFO - Exiting Calculator...
+2025-03-03 03:45:09,130 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 03:45:09,131 - app.plugins.add_command - WARNING - Invalid number of arguments for add command
+2025-03-03 03:45:09,132 - app.plugins.add_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 03:45:09,132 - app.plugins.add_command - ERROR - Error during addition: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/add_command.py", line 21, in execute
+    result = Calculator.add(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 03:45:09,134 - app.plugins.subtract_command - INFO - Subtract command executed with numbers: 5 and 3, result: 2
+2025-03-03 03:45:09,134 - app.plugins.subtract_command - WARNING - Invalid number of arguments for subtract command
+2025-03-03 03:45:09,135 - app.plugins.subtract_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 03:45:09,135 - app.plugins.subtract_command - ERROR - Error during subtraction: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/subtract_command.py", line 21, in execute
+    result = Calculator.subtract(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 03:45:09,136 - app.plugins.multiply_command - INFO - Multiply command executed with numbers: 5 and 3, result: 15
+2025-03-03 03:45:09,136 - app.plugins.multiply_command - WARNING - Invalid number of arguments for multiply command
+2025-03-03 03:45:09,136 - app.plugins.multiply_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 03:45:09,137 - app.plugins.multiply_command - ERROR - Error during multiplication: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/multiply_command.py", line 21, in execute
+    result = Calculator.multiply(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 03:45:09,138 - app.plugins.divide_command - INFO - Divide command executed with numbers: 6 and 2, result: 3
+2025-03-03 03:45:09,138 - app.plugins.divide_command - ERROR - Division by zero attempted
+2025-03-03 03:45:09,138 - app.plugins.divide_command - WARNING - Invalid number of arguments for divide command
+2025-03-03 03:45:09,138 - app.plugins.divide_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 03:45:09,139 - app.plugins.divide_command - ERROR - Error during division: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/divide_command.py", line 25, in execute
+    result = Calculator.divide(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 03:45:43,607 - app - INFO - Initializing the application...
+2025-03-03 03:45:43,607 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 03:45:43,607 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 03:45:43,607 - app - INFO - Registered command: add
+2025-03-03 03:45:43,608 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 03:45:43,608 - app - INFO - Registered command: divide
+2025-03-03 03:45:43,608 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 03:45:43,608 - app - INFO - Registered command: menu
+2025-03-03 03:45:43,608 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 03:45:43,608 - app - INFO - Registered command: multiply
+2025-03-03 03:45:43,608 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 03:45:43,608 - app - INFO - Registered command: subtract
+2025-03-03 03:45:43,608 - app - INFO - Starting the REPL loop...
+2025-03-03 03:45:43,608 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 03:45:43,608 - app - INFO - Exiting Calculator...
+2025-03-03 03:45:43,609 - app - INFO - Initializing the application...
+2025-03-03 03:45:43,609 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 03:45:43,609 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 03:45:43,609 - app - INFO - Registered command: add
+2025-03-03 03:45:43,609 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 03:45:43,609 - app - INFO - Registered command: divide
+2025-03-03 03:45:43,609 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 03:45:43,609 - app - INFO - Registered command: menu
+2025-03-03 03:45:43,609 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 03:45:43,609 - app - INFO - Registered command: multiply
+2025-03-03 03:45:43,609 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 03:45:43,609 - app - INFO - Registered command: subtract
+2025-03-03 03:45:43,609 - app - INFO - Starting the REPL loop...
+2025-03-03 03:45:43,609 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 03:45:43,609 - app - INFO - Executing command: unknown_command with arguments: []
+2025-03-03 03:45:43,609 - app - INFO - Exiting Calculator...
+2025-03-03 03:45:43,610 - app - ERROR - Failed to load plugin broken_plugin: Mock import error
+2025-03-03 03:45:43,611 - app - INFO - Initializing the application...
+2025-03-03 03:45:43,611 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 03:45:43,611 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 03:45:43,611 - app - INFO - Registered command: add
+2025-03-03 03:45:43,611 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 03:45:43,611 - app - INFO - Registered command: divide
+2025-03-03 03:45:43,611 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 03:45:43,611 - app - INFO - Registered command: menu
+2025-03-03 03:45:43,611 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 03:45:43,611 - app - INFO - Registered command: multiply
+2025-03-03 03:45:43,611 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 03:45:43,611 - app - INFO - Registered command: subtract
+2025-03-03 03:45:43,611 - app - INFO - Starting the REPL loop...
+2025-03-03 03:45:43,611 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 03:45:43,611 - app - INFO - Executing command: add with arguments: ['5', '3']
+2025-03-03 03:45:43,611 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 03:45:43,611 - app - INFO - Exiting Calculator...
+2025-03-03 03:45:43,616 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 03:45:43,616 - app.plugins.add_command - WARNING - Invalid number of arguments for add command
+2025-03-03 03:45:43,616 - app.plugins.add_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 03:45:43,617 - app.plugins.add_command - ERROR - Error during addition: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/add_command.py", line 21, in execute
+    result = Calculator.add(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 03:45:43,618 - app.plugins.subtract_command - INFO - Subtract command executed with numbers: 5 and 3, result: 2
+2025-03-03 03:45:43,618 - app.plugins.subtract_command - WARNING - Invalid number of arguments for subtract command
+2025-03-03 03:45:43,618 - app.plugins.subtract_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 03:45:43,619 - app.plugins.subtract_command - ERROR - Error during subtraction: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/subtract_command.py", line 21, in execute
+    result = Calculator.subtract(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 03:45:43,619 - app.plugins.multiply_command - INFO - Multiply command executed with numbers: 5 and 3, result: 15
+2025-03-03 03:45:43,620 - app.plugins.multiply_command - WARNING - Invalid number of arguments for multiply command
+2025-03-03 03:45:43,620 - app.plugins.multiply_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 03:45:43,620 - app.plugins.multiply_command - ERROR - Error during multiplication: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/multiply_command.py", line 21, in execute
+    result = Calculator.multiply(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 03:45:43,621 - app.plugins.divide_command - INFO - Divide command executed with numbers: 6 and 2, result: 3
+2025-03-03 03:45:43,621 - app.plugins.divide_command - ERROR - Division by zero attempted
+2025-03-03 03:45:43,622 - app.plugins.divide_command - WARNING - Invalid number of arguments for divide command
+2025-03-03 03:45:43,622 - app.plugins.divide_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 03:45:43,622 - app.plugins.divide_command - ERROR - Error during division: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/divide_command.py", line 25, in execute
+    result = Calculator.divide(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:06:46,923 - app - INFO - Initializing the application...
+2025-03-03 04:06:46,924 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:06:46,924 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:06:46,924 - app - INFO - Registered command: add
+2025-03-03 04:06:46,924 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:06:46,924 - app - INFO - Registered command: divide
+2025-03-03 04:06:46,924 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:06:46,924 - app - INFO - Registered command: menu
+2025-03-03 04:06:46,924 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:06:46,924 - app - INFO - Registered command: multiply
+2025-03-03 04:06:46,924 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:06:46,924 - app - INFO - Registered command: subtract
+2025-03-03 04:06:46,924 - app - INFO - Starting the REPL loop...
+2025-03-03 04:06:46,924 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:06:46,925 - app - INFO - Exiting Calculator...
+2025-03-03 04:06:46,925 - app - INFO - Initializing the application...
+2025-03-03 04:06:46,925 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:06:46,925 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:06:46,926 - app - INFO - Registered command: add
+2025-03-03 04:06:46,926 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:06:46,926 - app - INFO - Registered command: divide
+2025-03-03 04:06:46,926 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:06:46,926 - app - INFO - Registered command: menu
+2025-03-03 04:06:46,926 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:06:46,926 - app - INFO - Registered command: multiply
+2025-03-03 04:06:46,926 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:06:46,926 - app - INFO - Registered command: subtract
+2025-03-03 04:06:46,926 - app - INFO - Starting the REPL loop...
+2025-03-03 04:06:46,926 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:06:46,926 - app - INFO - Executing command: unknown_command with arguments: []
+2025-03-03 04:06:46,926 - app - INFO - Exiting Calculator...
+2025-03-03 04:06:46,927 - app - ERROR - Failed to load plugin broken_plugin: Mock import error
+2025-03-03 04:06:46,928 - app - INFO - Initializing the application...
+2025-03-03 04:06:46,928 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:06:46,928 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:06:46,928 - app - INFO - Registered command: add
+2025-03-03 04:06:46,928 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:06:46,928 - app - INFO - Registered command: divide
+2025-03-03 04:06:46,928 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:06:46,928 - app - INFO - Registered command: menu
+2025-03-03 04:06:46,928 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:06:46,928 - app - INFO - Registered command: multiply
+2025-03-03 04:06:46,928 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:06:46,928 - app - INFO - Registered command: subtract
+2025-03-03 04:06:46,928 - app - INFO - Starting the REPL loop...
+2025-03-03 04:06:46,928 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:06:46,928 - app - INFO - Executing command: add with arguments: ['5', '3']
+2025-03-03 04:06:46,928 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:06:46,928 - app - INFO - Exiting Calculator...
+2025-03-03 04:06:46,932 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:06:46,932 - app.plugins.add_command - WARNING - Invalid number of arguments for add command
+2025-03-03 04:06:46,933 - app.plugins.add_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:06:46,933 - app.plugins.add_command - ERROR - Error during addition: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/add_command.py", line 21, in execute
+    result = Calculator.add(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:06:46,935 - app.plugins.subtract_command - INFO - Subtract command executed with numbers: 5 and 3, result: 2
+2025-03-03 04:06:46,935 - app.plugins.subtract_command - WARNING - Invalid number of arguments for subtract command
+2025-03-03 04:06:46,936 - app.plugins.subtract_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:06:46,937 - app.plugins.subtract_command - ERROR - Error during subtraction: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/subtract_command.py", line 21, in execute
+    result = Calculator.subtract(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:06:46,938 - app.plugins.multiply_command - INFO - Multiply command executed with numbers: 5 and 3, result: 15
+2025-03-03 04:06:46,938 - app.plugins.multiply_command - WARNING - Invalid number of arguments for multiply command
+2025-03-03 04:06:46,938 - app.plugins.multiply_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:06:46,939 - app.plugins.multiply_command - ERROR - Error during multiplication: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/multiply_command.py", line 21, in execute
+    result = Calculator.multiply(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:06:46,940 - app.plugins.divide_command - INFO - Divide command executed with numbers: 6 and 2, result: 3
+2025-03-03 04:06:46,940 - app.plugins.divide_command - ERROR - Division by zero attempted
+2025-03-03 04:06:46,940 - app.plugins.divide_command - WARNING - Invalid number of arguments for divide command
+2025-03-03 04:06:46,940 - app.plugins.divide_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:06:46,941 - app.plugins.divide_command - ERROR - Error during division: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/divide_command.py", line 25, in execute
+    result = Calculator.divide(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:07:58,697 - app - INFO - Initializing the application...
+2025-03-03 04:07:58,697 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:07:58,697 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:07:58,697 - app - INFO - Registered command: add
+2025-03-03 04:07:58,699 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:07:58,699 - app - INFO - Registered command: divide
+2025-03-03 04:07:58,699 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:07:58,699 - app - INFO - Registered command: menu
+2025-03-03 04:07:58,699 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:07:58,699 - app - INFO - Registered command: multiply
+2025-03-03 04:07:58,699 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:07:58,699 - app - INFO - Registered command: subtract
+2025-03-03 04:07:58,699 - app - INFO - Starting the REPL loop...
+2025-03-03 04:07:58,699 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:07:58,699 - app - INFO - Exiting Calculator...
+2025-03-03 04:07:58,701 - app - INFO - Initializing the application...
+2025-03-03 04:07:58,701 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:07:58,701 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:07:58,701 - app - INFO - Registered command: add
+2025-03-03 04:07:58,701 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:07:58,701 - app - INFO - Registered command: divide
+2025-03-03 04:07:58,701 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:07:58,701 - app - INFO - Registered command: menu
+2025-03-03 04:07:58,701 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:07:58,701 - app - INFO - Registered command: multiply
+2025-03-03 04:07:58,701 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:07:58,701 - app - INFO - Registered command: subtract
+2025-03-03 04:07:58,701 - app - INFO - Starting the REPL loop...
+2025-03-03 04:07:58,701 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:07:58,701 - app - INFO - Executing command: unknown_command with arguments: []
+2025-03-03 04:07:58,701 - app - INFO - Exiting Calculator...
+2025-03-03 04:07:58,702 - app - ERROR - Failed to load plugin broken_plugin: Mock import error
+2025-03-03 04:07:58,703 - app - INFO - Initializing the application...
+2025-03-03 04:07:58,703 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:07:58,703 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:07:58,703 - app - INFO - Registered command: add
+2025-03-03 04:07:58,703 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:07:58,703 - app - INFO - Registered command: divide
+2025-03-03 04:07:58,703 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:07:58,704 - app - INFO - Registered command: menu
+2025-03-03 04:07:58,704 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:07:58,704 - app - INFO - Registered command: multiply
+2025-03-03 04:07:58,704 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:07:58,704 - app - INFO - Registered command: subtract
+2025-03-03 04:07:58,704 - app - INFO - Starting the REPL loop...
+2025-03-03 04:07:58,704 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:07:58,704 - app - INFO - Executing command: add with arguments: ['5', '3']
+2025-03-03 04:07:58,704 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:07:58,704 - app - INFO - Exiting Calculator...
+2025-03-03 04:07:58,708 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:07:58,708 - app.plugins.add_command - WARNING - Invalid number of arguments for add command
+2025-03-03 04:07:58,709 - app.plugins.add_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:07:58,709 - app.plugins.add_command - ERROR - Error during addition: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/add_command.py", line 21, in execute
+    result = Calculator.add(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:07:58,710 - app.plugins.subtract_command - INFO - Subtract command executed with numbers: 5 and 3, result: 2
+2025-03-03 04:07:58,711 - app.plugins.subtract_command - WARNING - Invalid number of arguments for subtract command
+2025-03-03 04:07:58,711 - app.plugins.subtract_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:07:58,711 - app.plugins.subtract_command - ERROR - Error during subtraction: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/subtract_command.py", line 21, in execute
+    result = Calculator.subtract(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:07:58,712 - app.plugins.multiply_command - INFO - Multiply command executed with numbers: 5 and 3, result: 15
+2025-03-03 04:07:58,712 - app.plugins.multiply_command - WARNING - Invalid number of arguments for multiply command
+2025-03-03 04:07:58,713 - app.plugins.multiply_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:07:58,713 - app.plugins.multiply_command - ERROR - Error during multiplication: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/multiply_command.py", line 21, in execute
+    result = Calculator.multiply(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:07:58,713 - app.plugins.divide_command - INFO - Divide command executed with numbers: 6 and 2, result: 3
+2025-03-03 04:07:58,714 - app.plugins.divide_command - ERROR - Division by zero attempted
+2025-03-03 04:07:58,714 - app.plugins.divide_command - WARNING - Invalid number of arguments for divide command
+2025-03-03 04:07:58,714 - app.plugins.divide_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:07:58,715 - app.plugins.divide_command - ERROR - Error during division: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/divide_command.py", line 25, in execute
+    result = Calculator.divide(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:08:33,770 - app - INFO - Initializing the application...
+2025-03-03 04:08:33,770 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:08:33,770 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:08:33,770 - app - INFO - Registered command: add
+2025-03-03 04:08:33,770 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:08:33,770 - app - INFO - Registered command: divide
+2025-03-03 04:08:33,770 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:08:33,770 - app - INFO - Registered command: menu
+2025-03-03 04:08:33,770 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:08:33,770 - app - INFO - Registered command: multiply
+2025-03-03 04:08:33,770 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:08:33,770 - app - INFO - Registered command: subtract
+2025-03-03 04:08:33,771 - app - INFO - Starting the REPL loop...
+2025-03-03 04:08:33,771 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:08:33,771 - app - INFO - Exiting Calculator...
+2025-03-03 04:08:33,772 - app - INFO - Initializing the application...
+2025-03-03 04:08:33,772 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:08:33,772 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:08:33,772 - app - INFO - Registered command: add
+2025-03-03 04:08:33,772 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:08:33,772 - app - INFO - Registered command: divide
+2025-03-03 04:08:33,772 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:08:33,772 - app - INFO - Registered command: menu
+2025-03-03 04:08:33,772 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:08:33,772 - app - INFO - Registered command: multiply
+2025-03-03 04:08:33,772 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:08:33,772 - app - INFO - Registered command: subtract
+2025-03-03 04:08:33,772 - app - INFO - Starting the REPL loop...
+2025-03-03 04:08:33,772 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:08:33,772 - app - INFO - Executing command: unknown_command with arguments: []
+2025-03-03 04:08:33,772 - app - INFO - Exiting Calculator...
+2025-03-03 04:08:33,775 - app - ERROR - Failed to load plugin broken_plugin: Mock import error
+2025-03-03 04:08:33,776 - app - INFO - Initializing the application...
+2025-03-03 04:08:33,776 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:08:33,776 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:08:33,776 - app - INFO - Registered command: add
+2025-03-03 04:08:33,776 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:08:33,776 - app - INFO - Registered command: divide
+2025-03-03 04:08:33,776 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:08:33,776 - app - INFO - Registered command: menu
+2025-03-03 04:08:33,776 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:08:33,776 - app - INFO - Registered command: multiply
+2025-03-03 04:08:33,777 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:08:33,777 - app - INFO - Registered command: subtract
+2025-03-03 04:08:33,777 - app - INFO - Starting the REPL loop...
+2025-03-03 04:08:33,777 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:08:33,777 - app - INFO - Executing command: add with arguments: ['5', '3']
+2025-03-03 04:08:33,777 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:08:33,777 - app - INFO - Exiting Calculator...
+2025-03-03 04:08:33,781 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:08:33,782 - app.plugins.add_command - WARNING - Invalid number of arguments for add command
+2025-03-03 04:08:33,782 - app.plugins.add_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:08:33,783 - app.plugins.add_command - ERROR - Error during addition: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/add_command.py", line 21, in execute
+    result = Calculator.add(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:08:33,784 - app.plugins.subtract_command - INFO - Subtract command executed with numbers: 5 and 3, result: 2
+2025-03-03 04:08:33,785 - app.plugins.subtract_command - WARNING - Invalid number of arguments for subtract command
+2025-03-03 04:08:33,785 - app.plugins.subtract_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:08:33,785 - app.plugins.subtract_command - ERROR - Error during subtraction: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/subtract_command.py", line 21, in execute
+    result = Calculator.subtract(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:08:33,786 - app.plugins.multiply_command - INFO - Multiply command executed with numbers: 5 and 3, result: 15
+2025-03-03 04:08:33,787 - app.plugins.multiply_command - WARNING - Invalid number of arguments for multiply command
+2025-03-03 04:08:33,787 - app.plugins.multiply_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:08:33,787 - app.plugins.multiply_command - ERROR - Error during multiplication: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/multiply_command.py", line 21, in execute
+    result = Calculator.multiply(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:08:33,788 - app.plugins.divide_command - INFO - Divide command executed with numbers: 6 and 2, result: 3
+2025-03-03 04:08:33,788 - app.plugins.divide_command - ERROR - Division by zero attempted
+2025-03-03 04:08:33,789 - app.plugins.divide_command - WARNING - Invalid number of arguments for divide command
+2025-03-03 04:08:33,789 - app.plugins.divide_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:08:33,789 - app.plugins.divide_command - ERROR - Error during division: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/divide_command.py", line 25, in execute
+    result = Calculator.divide(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:16:56,340 - app - INFO - Initializing the application...
+2025-03-03 04:16:56,340 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:16:56,340 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:16:56,340 - app - INFO - Registered command: add
+2025-03-03 04:16:56,340 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:16:56,340 - app - INFO - Registered command: divide
+2025-03-03 04:16:56,340 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:16:56,341 - app - INFO - Registered command: menu
+2025-03-03 04:16:56,341 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:16:56,341 - app - INFO - Registered command: multiply
+2025-03-03 04:16:56,341 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:16:56,341 - app - INFO - Registered command: subtract
+2025-03-03 04:16:56,341 - app - INFO - Starting the REPL loop...
+2025-03-03 04:16:56,341 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:16:56,341 - app - INFO - Exiting Calculator...
+2025-03-03 04:16:56,342 - app - INFO - Initializing the application...
+2025-03-03 04:16:56,342 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:16:56,342 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:16:56,342 - app - INFO - Registered command: add
+2025-03-03 04:16:56,342 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:16:56,342 - app - INFO - Registered command: divide
+2025-03-03 04:16:56,342 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:16:56,342 - app - INFO - Registered command: menu
+2025-03-03 04:16:56,342 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:16:56,342 - app - INFO - Registered command: multiply
+2025-03-03 04:16:56,342 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:16:56,342 - app - INFO - Registered command: subtract
+2025-03-03 04:16:56,342 - app - INFO - Starting the REPL loop...
+2025-03-03 04:16:56,342 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:16:56,342 - app - INFO - Executing command: unknown_command with arguments: []
+2025-03-03 04:16:56,342 - app - INFO - Exiting Calculator...
+2025-03-03 04:16:56,414 - app - ERROR - Failed to load plugin broken_plugin: Mock import error
+2025-03-03 04:16:56,415 - app - INFO - Initializing the application...
+2025-03-03 04:16:56,415 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:16:56,415 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:16:56,415 - app - INFO - Registered command: add
+2025-03-03 04:16:56,415 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:16:56,415 - app - INFO - Registered command: divide
+2025-03-03 04:16:56,415 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:16:56,415 - app - INFO - Registered command: menu
+2025-03-03 04:16:56,415 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:16:56,415 - app - INFO - Registered command: multiply
+2025-03-03 04:16:56,415 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:16:56,415 - app - INFO - Registered command: subtract
+2025-03-03 04:16:56,415 - app - INFO - Starting the REPL loop...
+2025-03-03 04:16:56,415 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:16:56,415 - app - INFO - Executing command: add with arguments: ['5', '3']
+2025-03-03 04:16:56,415 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:16:56,415 - app - INFO - Exiting Calculator...
+2025-03-03 04:16:56,421 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:16:56,421 - app.plugins.add_command - WARNING - Invalid number of arguments for add command
+2025-03-03 04:16:56,422 - app.plugins.add_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:16:56,422 - app.plugins.add_command - ERROR - Error during addition: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/add_command.py", line 21, in execute
+    result = Calculator.add(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:16:56,425 - app.plugins.subtract_command - INFO - Subtract command executed with numbers: 5 and 3, result: 2
+2025-03-03 04:16:56,425 - app.plugins.subtract_command - WARNING - Invalid number of arguments for subtract command
+2025-03-03 04:16:56,425 - app.plugins.subtract_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:16:56,426 - app.plugins.subtract_command - ERROR - Error during subtraction: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/subtract_command.py", line 21, in execute
+    result = Calculator.subtract(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:16:56,427 - app.plugins.multiply_command - INFO - Multiply command executed with numbers: 5 and 3, result: 15
+2025-03-03 04:16:56,427 - app.plugins.multiply_command - WARNING - Invalid number of arguments for multiply command
+2025-03-03 04:16:56,427 - app.plugins.multiply_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:16:56,428 - app.plugins.multiply_command - ERROR - Error during multiplication: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/multiply_command.py", line 21, in execute
+    result = Calculator.multiply(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:16:56,428 - app.plugins.divide_command - INFO - Divide command executed with numbers: 6 and 2, result: 3
+2025-03-03 04:16:56,429 - app.plugins.divide_command - ERROR - Division by zero attempted
+2025-03-03 04:16:56,429 - app.plugins.divide_command - WARNING - Invalid number of arguments for divide command
+2025-03-03 04:16:56,430 - app.plugins.divide_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:16:56,430 - app.plugins.divide_command - ERROR - Error during division: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/divide_command.py", line 25, in execute
+    result = Calculator.divide(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:18:40,300 - app - INFO - Initializing the application...
+2025-03-03 04:18:40,300 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:18:40,300 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:18:40,300 - app - INFO - Registered command: add
+2025-03-03 04:18:40,300 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:18:40,300 - app - INFO - Registered command: divide
+2025-03-03 04:18:40,300 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:18:40,301 - app - INFO - Registered command: menu
+2025-03-03 04:18:40,301 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:18:40,301 - app - INFO - Registered command: multiply
+2025-03-03 04:18:40,301 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:18:40,301 - app - INFO - Registered command: subtract
+2025-03-03 04:18:40,301 - app - INFO - Starting the REPL loop...
+2025-03-03 04:18:40,301 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:18:40,301 - app - INFO - Exiting Calculator...
+2025-03-03 04:18:40,302 - app - INFO - Initializing the application...
+2025-03-03 04:18:40,302 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:18:40,302 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:18:40,302 - app - INFO - Registered command: add
+2025-03-03 04:18:40,302 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:18:40,302 - app - INFO - Registered command: divide
+2025-03-03 04:18:40,302 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:18:40,303 - app - INFO - Registered command: menu
+2025-03-03 04:18:40,303 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:18:40,303 - app - INFO - Registered command: multiply
+2025-03-03 04:18:40,303 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:18:40,303 - app - INFO - Registered command: subtract
+2025-03-03 04:18:40,303 - app - INFO - Starting the REPL loop...
+2025-03-03 04:18:40,303 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:18:40,303 - app - INFO - Executing command: unknown_command with arguments: []
+2025-03-03 04:18:40,303 - app - INFO - Exiting Calculator...
+2025-03-03 04:18:40,375 - app - ERROR - Failed to load plugin broken_plugin: Mock import error
+2025-03-03 04:18:40,376 - app - INFO - Initializing the application...
+2025-03-03 04:18:40,376 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:18:40,376 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:18:40,377 - app - INFO - Registered command: add
+2025-03-03 04:18:40,377 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:18:40,377 - app - INFO - Registered command: divide
+2025-03-03 04:18:40,377 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:18:40,377 - app - INFO - Registered command: menu
+2025-03-03 04:18:40,377 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:18:40,377 - app - INFO - Registered command: multiply
+2025-03-03 04:18:40,377 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:18:40,377 - app - INFO - Registered command: subtract
+2025-03-03 04:18:40,377 - app - INFO - Starting the REPL loop...
+2025-03-03 04:18:40,377 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:18:40,377 - app - INFO - Executing command: add with arguments: ['5', '3']
+2025-03-03 04:18:40,377 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:18:40,377 - app - INFO - Exiting Calculator...
+2025-03-03 04:18:40,382 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:18:40,383 - app.plugins.add_command - WARNING - Invalid number of arguments for add command
+2025-03-03 04:18:40,383 - app.plugins.add_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:18:40,384 - app.plugins.add_command - ERROR - Error during addition: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/add_command.py", line 21, in execute
+    result = Calculator.add(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:18:40,386 - app.plugins.subtract_command - INFO - Subtract command executed with numbers: 5 and 3, result: 2
+2025-03-03 04:18:40,387 - app.plugins.subtract_command - WARNING - Invalid number of arguments for subtract command
+2025-03-03 04:18:40,387 - app.plugins.subtract_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:18:40,387 - app.plugins.subtract_command - ERROR - Error during subtraction: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/subtract_command.py", line 21, in execute
+    result = Calculator.subtract(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:18:40,388 - app.plugins.multiply_command - INFO - Multiply command executed with numbers: 5 and 3, result: 15
+2025-03-03 04:18:40,388 - app.plugins.multiply_command - WARNING - Invalid number of arguments for multiply command
+2025-03-03 04:18:40,389 - app.plugins.multiply_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:18:40,389 - app.plugins.multiply_command - ERROR - Error during multiplication: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/multiply_command.py", line 21, in execute
+    result = Calculator.multiply(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:18:40,390 - app.plugins.divide_command - INFO - Divide command executed with numbers: 6 and 2, result: 3
+2025-03-03 04:18:40,390 - app.plugins.divide_command - ERROR - Division by zero attempted
+2025-03-03 04:18:40,390 - app.plugins.divide_command - WARNING - Invalid number of arguments for divide command
+2025-03-03 04:18:40,391 - app.plugins.divide_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:18:40,391 - app.plugins.divide_command - ERROR - Error during division: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/divide_command.py", line 25, in execute
+    result = Calculator.divide(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:18:54,647 - app - INFO - Initializing the application...
+2025-03-03 04:18:54,647 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:18:54,647 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:18:54,647 - app - INFO - Registered command: add
+2025-03-03 04:18:54,647 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:18:54,647 - app - INFO - Registered command: divide
+2025-03-03 04:18:54,647 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:18:54,647 - app - INFO - Registered command: menu
+2025-03-03 04:18:54,648 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:18:54,648 - app - INFO - Registered command: multiply
+2025-03-03 04:18:54,648 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:18:54,648 - app - INFO - Registered command: subtract
+2025-03-03 04:18:54,648 - app - INFO - Starting the REPL loop...
+2025-03-03 04:18:54,648 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:18:54,648 - app - INFO - Exiting Calculator...
+2025-03-03 04:18:54,650 - app - INFO - Initializing the application...
+2025-03-03 04:18:54,650 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:18:54,650 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:18:54,650 - app - INFO - Registered command: add
+2025-03-03 04:18:54,650 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:18:54,650 - app - INFO - Registered command: divide
+2025-03-03 04:18:54,650 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:18:54,650 - app - INFO - Registered command: menu
+2025-03-03 04:18:54,650 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:18:54,650 - app - INFO - Registered command: multiply
+2025-03-03 04:18:54,650 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:18:54,650 - app - INFO - Registered command: subtract
+2025-03-03 04:18:54,650 - app - INFO - Starting the REPL loop...
+2025-03-03 04:18:54,650 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:18:54,650 - app - INFO - Executing command: unknown_command with arguments: []
+2025-03-03 04:18:54,650 - app - INFO - Exiting Calculator...
+2025-03-03 04:18:54,652 - app - ERROR - Failed to load plugin broken_plugin: Mock import error
+2025-03-03 04:18:54,653 - app - INFO - Initializing the application...
+2025-03-03 04:18:54,653 - app - INFO - Loading plugins from app.plugins...
+2025-03-03 04:18:54,653 - app - INFO - Attempting to load plugin: add_command
+2025-03-03 04:18:54,653 - app - INFO - Registered command: add
+2025-03-03 04:18:54,653 - app - INFO - Attempting to load plugin: divide_command
+2025-03-03 04:18:54,653 - app - INFO - Registered command: divide
+2025-03-03 04:18:54,653 - app - INFO - Attempting to load plugin: menu_command
+2025-03-03 04:18:54,653 - app - INFO - Registered command: menu
+2025-03-03 04:18:54,653 - app - INFO - Attempting to load plugin: multiply_command
+2025-03-03 04:18:54,653 - app - INFO - Registered command: multiply
+2025-03-03 04:18:54,653 - app - INFO - Attempting to load plugin: subtract_command
+2025-03-03 04:18:54,653 - app - INFO - Registered command: subtract
+2025-03-03 04:18:54,653 - app - INFO - Starting the REPL loop...
+2025-03-03 04:18:54,653 - app.plugins.menu_command - INFO - Displaying available commands
+2025-03-03 04:18:54,654 - app - INFO - Executing command: add with arguments: ['5', '3']
+2025-03-03 04:18:54,654 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:18:54,654 - app - INFO - Exiting Calculator...
+2025-03-03 04:18:54,661 - app.plugins.add_command - INFO - Add command executed with numbers: 5 and 3, result: 8
+2025-03-03 04:18:54,662 - app.plugins.add_command - WARNING - Invalid number of arguments for add command
+2025-03-03 04:18:54,662 - app.plugins.add_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:18:54,664 - app.plugins.add_command - ERROR - Error during addition: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/add_command.py", line 21, in execute
+    result = Calculator.add(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:18:54,666 - app.plugins.subtract_command - INFO - Subtract command executed with numbers: 5 and 3, result: 2
+2025-03-03 04:18:54,667 - app.plugins.subtract_command - WARNING - Invalid number of arguments for subtract command
+2025-03-03 04:18:54,668 - app.plugins.subtract_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:18:54,669 - app.plugins.subtract_command - ERROR - Error during subtraction: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/subtract_command.py", line 21, in execute
+    result = Calculator.subtract(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:18:54,670 - app.plugins.multiply_command - INFO - Multiply command executed with numbers: 5 and 3, result: 15
+2025-03-03 04:18:54,670 - app.plugins.multiply_command - WARNING - Invalid number of arguments for multiply command
+2025-03-03 04:18:54,671 - app.plugins.multiply_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:18:54,671 - app.plugins.multiply_command - ERROR - Error during multiplication: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/multiply_command.py", line 21, in execute
+    result = Calculator.multiply(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
+2025-03-03 04:18:54,672 - app.plugins.divide_command - INFO - Divide command executed with numbers: 6 and 2, result: 3
+2025-03-03 04:18:54,673 - app.plugins.divide_command - ERROR - Division by zero attempted
+2025-03-03 04:18:54,673 - app.plugins.divide_command - WARNING - Invalid number of arguments for divide command
+2025-03-03 04:18:54,674 - app.plugins.divide_command - ERROR - Invalid input, failed to convert input to Decimal
+2025-03-03 04:18:54,675 - app.plugins.divide_command - ERROR - Error during division: Test error
+Traceback (most recent call last):
+  File "/Users/mahathmareddy/homework6/app/plugins/divide_command.py", line 25, in execute
+    result = Calculator.divide(num1, num2)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/mock.py", line 1226, in _execute_mock_call
+    raise effect
+ValueError: Test error
